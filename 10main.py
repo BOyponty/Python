@@ -22,8 +22,7 @@ for candidat, count in vote_counts.items():
 vainqueur = sorted_votes[0][0]          
 print(f"Le vainqueur est : {vainqueur}")
 # 5. Vérifie s'il y a égalité entre les deux premiers.
-if len(sorted_votes) > 1 and sorted_votes[0][1] == sorted_votes
-[1][1]:
+if len(sorted_votes) > 1 and sorted_votes[0][1] == sorted_votes[1][1]:
     print("Il y a une égalité entre les deux premiers candidats.")      
 else:    print("Il n'y a pas d'égalité entre les deux premiers candidats.")
 
@@ -37,15 +36,3 @@ else:    print("Il n'y a pas d'égalité entre les deux premiers candidats.")
 
 
 
-
-Exercice 10 — 🔴 Difficile
-Tu gères un système de votes pour une élection :
-```python
-votes = ["Alice", "Bob", "Alice", "Charlie", "Bob",
-         "Alice", "Charlie", "Bob", "Alice", "Charlie"]
-```
-1. Compte le nombre de votes pour chaque candidat (sans utiliser `Counter`).
-2. Affiche les résultats triés du plus voté au moins voté.
-3. Affiche le pourcentage de votes pour chaque candidat.
-4. Déclare le vainqueur.
-5. Vérifie s'il y a égalité entre les deux premiers.
